@@ -1,0 +1,137 @@
+@text-color: #99aab5;
+
+.ProfileRightSide {
+	position: relative;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #e9e7e7;
+    border-radius: 4px;
+
+    .ProfileStatus {
+    	position: absolute;
+    	top: 5px;
+    	right: 5px;
+    	border: 1px solid #00B22D;
+    	border-radius: 3px;
+
+    	span {
+    		display: inline-block;
+    		vertical-align: middle;
+    		font-size: 14px;
+    		color: #00B22D;
+    		padding: 5px;
+    		text-align: center;
+
+    		&:before {
+    			content:'';
+    			width: 5px;
+    			height: 5px;
+    			display: inline-block;
+    			vertical-align: middle;
+    			background: #00B22D;
+    			margin: 5px 2px 8px 0;
+    			border-radius: 100%; 
+    		}
+    	}
+    }
+
+    .ProfileImgWrap {
+
+	    .ProfileImage {
+	    	width: 150px;
+	    	height: 150px;
+	    	background: #4757b2;
+	    	margin: 0 auto;
+	    	text-align: center;
+	    	border-radius: 100%;
+
+	    	span {
+	    		font-size: 100px;
+	    		color: #fff;
+	    		line-height: 145px;
+	    		text-trandform: uppercase;
+	    	}
+	    }
+
+	    .ProfileName {
+	    	margin: 5px 0;
+	    	text-align: center;
+
+	    	span {
+	    		font-size: 20px;
+			    color: #000;
+			    font-weight: bold;
+			    letter-spacing: 1px;
+	    	}
+	    }
+
+	    .ProfileStars {
+	    	text-align: center;
+
+	    	span {
+	    		font-weight: bold;
+
+	    		+ span {
+	    			font-weight: normal;
+	    			color: #999999;
+	    		}
+	    	}
+	    }
+
+	    .ProfileBtn {
+	    	margin: 10px 0;
+	    	a {
+	    		display: block;
+	    		width: 150px;
+	    		height: 40px;
+	    		font-size: 14px;
+	    		font-weight: bold;
+	    		color: #fff;
+	    		background: #00B22D;
+	    		margin: 0 auto;
+	    		border-radius: 3px;
+	    		line-height: 40px;
+	    		text-align: center;
+	    	}
+	    }
+    }
+
+    .ProfileDetails {
+    	li {
+    		padding: 5px 0;
+
+    		&:after {
+    			content:'';
+    			display: block;
+    			clear: both;
+    		}
+
+    		span {
+    			float: left;
+
+    			+ span {
+    				float: right;
+    				font-weight: bold;
+    			}
+    		}
+    	}
+    }
+
+    .ProfileDescription {
+    	padding-top: 20px;
+    	margin-top: 20px;
+    	border-top: 1px solid #e9e7e7;
+
+    	&:after {
+    		content:'';
+    		display: block;
+    		clear: both;
+    	}
+
+    	a {
+    		float: right;
+    		font-weight: bold;
+    		color: #4757b2;
+    	}
+    }
+}

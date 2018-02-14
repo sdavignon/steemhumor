@@ -1,0 +1,37 @@
+@import (reference) "./variables.less";
+
+.post-layout {
+  position: relative;
+  @media @medium-max-width {
+    padding: 0 @mobile-padding
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .right {
+    width: @right-width;
+  }
+
+  .rightContainer {
+    float: right;
+    display: none;
+    width: @right-width;
+
+    @media @small {
+      display: block;
+    }  
+  }
+
+  .center {
+    float: left;
+    width: 100%;
+
+    @media @small {
+      width: calc(100% ~"-" (@right-width + @margin));
+    }
+  }
+}

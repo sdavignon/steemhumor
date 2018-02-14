@@ -1,0 +1,80 @@
+@text-color: #99aab5;
+
+.Topics {
+  min-width: 150px;
+  & > h4 {
+    color: @text-color;
+    margin: 16px 0;
+    font-weight: 500;
+  }
+
+  & > h5 {
+    color: @text-color;
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .anticon {
+    font-size: 24px !important;
+  }
+}
+
+.Topics__list {
+  & > li {
+    padding: 2px 0;
+  }
+}
+
+.topnav-trending-topics {
+  background-color: #fff;
+  border-bottom: 1px solid #e9e7e7;
+  line-height: 25px;
+
+  > div {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1010px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
+
+  .Topics {
+    position: relative;
+    width: 100vw;
+    white-space: nowrap;
+    text-align: center;
+
+    &__list {
+      &:after {
+        content:'';
+        display: block;
+        clear: both;
+      }
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px 0;
+
+        .Topic {
+          font-size: 16px;
+          color: #333 !important;
+          border-radius: 0;
+          border-width: 0;
+          border-color: transparent;
+
+          &:hover {
+            border-color: transparent !important;
+            background-color: transparent !important;
+            color: #54d2a0 !important;
+          }
+        }
+      }
+    }
+  }
+}

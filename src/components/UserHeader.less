@@ -1,0 +1,143 @@
+@import (reference) "../styles/custom.less";
+@import (reference) "../styles/modules/variables.less";
+
+.UserHeader {
+  background-color: #4757b2;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  &__more {
+    font-size: 36px !important;
+    color: @purple;
+
+    &:hover {
+      cursor: pointer;
+      color: darken(@purple, 15%);
+    }
+  }
+
+  &--cover {
+    background-color: #4757b2 !important;
+
+    .UserHeader__rank,
+    .UserHeader__rank & > i,
+    .UserHeader__handle,
+    .UserHeader__more,
+    .UserHeader__user__username {
+      color: #ffffff !important;
+      text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+
+.UserHeader__container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1011px;
+  padding: 50px 0;
+}
+
+@media @small-max-width {
+  .UserHeader__container {
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 16px;
+  }
+
+  .UserHeader__user {
+    padding-bottom: 20px;
+    margin: 0 !important;
+
+    &__username {
+      font-size: 28px !important;
+    }
+  }
+
+  .UserHeader__row {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .UserHeader__rank {
+    align-self: center;
+    margin-top: -62px !important;
+    margin-left: 15px;
+  }
+
+  .UserHeader__handle {
+    top: -30px !important;
+  }
+
+  .UserHeader__more {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+  }
+
+  .UserHeader__user__button {
+    top: 40px !important;
+  }
+
+  .UserHeader__handle-rank-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media @medium-max-width {
+  .UserHeader__container {
+    padding-left: 16px;
+  }
+}
+
+.UserHeader__user {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.UserHeader__row {
+  display: flex;
+}
+
+.UserHeader__handle {
+  position: relative;
+  top: -8px;
+  color: #fff;
+}
+
+.UserHeader__rank {
+  margin-top: -4px;
+
+  & > i {
+    font-size: 18px !important;
+    vertical-align: -1px;
+    margin-right: 4px;
+    color: #fff;
+  }
+
+  span {
+    color: #fff;
+  }
+}
+
+.UserHeader__user__username {
+  margin-right: -8px;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+
+  .ant-tag {
+    margin-left: 8px;
+    vertical-align: 4px;
+    text-shadow: none;
+  }
+}
+
+.UserHeader__user__button {
+  position: relative;
+  top: 12px;
+  margin: 0 10px;
+}

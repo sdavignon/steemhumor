@@ -1,0 +1,60 @@
+@import (reference) "./variables.less";
+
+.feed-layout {
+  position: relative;
+  @media only screen and (min-width: 768px) and (max-width: 998px) {
+    padding: 0 @mobile-padding
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .left {
+    width: @left-width;
+  }
+
+  .right {
+    width: @right-width;
+  }
+
+  .leftContainer {
+    float: left;
+    display: none;
+    width: @left-width;
+
+    @media @small {
+      margin-right: 20px;
+    }
+
+    @media @medium {
+      display: block;
+      margin-right: 20px;
+    }
+  }
+
+  .rightContainer {
+    float: right;
+    display: none;
+    width: @right-width;
+
+    @media @small {
+      display: block;
+    }
+  }
+
+  .center {
+    float: left;
+    width: 100%;
+
+    @media @small {
+      width: calc(100% ~"-" (@left-width + @margin-left));
+    }
+
+    @media @medium {
+      width: calc(100% ~"-" (@left-width + @margin-left));
+    }
+  }
+}
