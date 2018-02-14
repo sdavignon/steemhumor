@@ -92,9 +92,9 @@ const Topnav = ({ intl, username, onMenuItemClick }) => {
       <div className="topnav-layout container">
         <div className="left">
           <Link className="Topnav__brand" to="/">
-            STEEMGIGS
+            SteemHumor
           </Link>
-          <span className="Topnav__version">alpha</span>
+          <span className="Topnav__version"></span>
         </div>
         <div className="center">
           <div className="Topnav__input-container">
@@ -102,7 +102,7 @@ const Topnav = ({ intl, username, onMenuItemClick }) => {
               onPressEnter={event =>
                 window.open(
                   `https://www.google.com/search?q=${encodeURIComponent(
-                    `site:steemit.com ${event.target.value}`,
+                    `site:steemhumor.com ${event.target.value}`,
                   )}`,
                 )}
               placeholder={intl.formatMessage({

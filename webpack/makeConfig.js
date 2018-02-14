@@ -46,8 +46,8 @@ function makePlugins(options) {
         ENABLE_LOGGER: JSON.stringify(process.env.ENABLE_LOGGER),
         IMG_HOST: JSON.stringify(process.env.IMG_HOST || 'https://img.busy.org'),
         SENTRY_PUBLIC_DSN: isDevelopment ? null : JSON.stringify(process.env.SENTRY_PUBLIC_DSN),
-        STEEMGIGS_CATEGORY: JSON.stringify(process.env.STEEMGIGS_CATEGORY || 'steemgigs'),
-        STEEMCONNECT_CLIENT_ID: JSON.stringify(process.env.STEEMCONNECT_CLIENT_ID || 'steemgigs.app'),
+        STEEMGIGS_CATEGORY: JSON.stringify(process.env.STEEMGIGS_CATEGORY || 'steemhumor'),
+        STEEMCONNECT_CLIENT_ID: JSON.stringify(process.env.STEEMCONNECT_CLIENT_ID || 'steemhumor.app'),
         STEEMCONNECT_REDIRECT_URL: JSON.stringify(
           process.env.STEEMCONNECT_REDIRECT_URL || 'http://precise.tips:3000/callback',
         ),

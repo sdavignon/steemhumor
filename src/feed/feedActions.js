@@ -45,7 +45,7 @@ export const getFeedContent = ({ sortBy, category, limit }) => (
   dispatch(
     getFeedContentWithoutAPI({
       sortBy: sortBy || 'trending',
-      category: category || 'steemgigs',
+      category: category || 'steemhumor',
     }),
   );
 
@@ -126,7 +126,7 @@ export const getMoreFeedContent = ({ sortBy, category, limit }) => (
   dispatch(
     getMoreFeedContentWithoutAPI({
       sortBy: sortBy || 'trending',
-      category: category || 'steemgigs',
+      category: category || 'steemhumor',
     }),
   );
 
@@ -157,7 +157,7 @@ export const getMoreFeedContent = ({ sortBy, category, limit }) => (
       return dispatch(
         getMoreFeedContentSuccess({
           sortBy: sortBy || 'trending',
-          category: category || 'steemgigs',
+          category: category || 'steemhumor',
           postsData,
           limit,
         }),

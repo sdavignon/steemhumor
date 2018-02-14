@@ -66,7 +66,7 @@ class SubFeed extends React.Component {
   componentDidMount() {
     const { authenticated, loaded, user, match } = this.props;
     const sortBy = match.params.sortBy || 'trending';
-    const category = 'steemgigs'; //steemgigs
+    const category = 'steemhumor'; //steemhumor
 
     if (!loaded && Cookie.get('access_token')) return;
 
@@ -87,7 +87,7 @@ class SubFeed extends React.Component {
     const isAuthenticated = authenticated;
     const wasLoaded = this.props.loaded;
     const isLoaded = loaded;
-    const category = 'steemgigs'; //steemgigs
+    const category = 'steemhumor' //steemhumor
 
     if (!isLoaded && Cookie.get('access_token')) return;
 
